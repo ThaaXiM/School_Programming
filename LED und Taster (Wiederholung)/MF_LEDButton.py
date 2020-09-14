@@ -69,7 +69,7 @@ class Database:
         :param cConnection = connect
         :param cCursor = cursor
         """
-        self.__cConnection = sqlite3.connect(os.path.join(os.path.dirname(__file__), "Fischer_DB.sqlite3"))
+        self.__cConnection = sqlite3.connect(os.path.join(os.path.dirname(__file__), "MF_DB.sqlite3"))
         self.cCursor = self.__cConnection.cursor()
 
     def createTable(self):
